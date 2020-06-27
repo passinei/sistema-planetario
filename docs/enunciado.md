@@ -1,6 +1,6 @@
 # Prática: Movimentando paradas em JavaScript
 
-_OBS: Este documento é uma adaptação do enunciado escrito e publicado no Moodle pelo professor [Flávio Coutinho](github.com/fegemo)_
+_OBS: Este documento é uma adaptação do enunciado escrito e publicado no Moodle pelo professor [Flávio Coutinho](https://github.com/fegemo)_
 
 ![Vários vagalumes voando da esquerda para a direita em uma paisagem de céu noturno.](images/Vagalumes%20de%20Chihiro.gif)
 
