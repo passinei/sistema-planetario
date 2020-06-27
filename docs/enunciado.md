@@ -36,4 +36,4 @@ Em vez de apenas uma imagem se movimentando, tenha um vetor com elas e coloque u
 
 ## Desafio 2: Arrumar uns movimentos loucos
 
-Use funções trigonométricas como seno e cosseno (e outras) para fazer movimentações diferentes. Por exemplo, é possível criar um movimento circular para o objeto ao fazer tanto o x quanto o y serem definidos de acordo com o cosseno e o seno (respectivamente). Nesse caso, seriam x/y seriam seno/cosseno de um ângulo que poderia começar de 0 e ir crescendo até `2 \* Math.PI`.
+Use funções trigonométricas como seno e cosseno (e outras) para fazer movimentações diferentes. Por exemplo, é possível criar um movimento circular para o objeto ao fazer tanto o x quanto o y serem definidos de acordo com o cosseno e o seno (respectivamente). Nesse caso, seriam x/y seriam seno/cosseno de um ângulo que poderia começar de 0 e ir crescendo até `2 * Math.PI`.
