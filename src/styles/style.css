@@ -29,7 +29,7 @@ div.orbita {
 	z-index: -1;
 }
 
-button#novo-planeta {
+button {
 	width: 60px;
 	height: 60px;
 	font-size: 48px;
@@ -41,7 +41,7 @@ button#novo-planeta {
 	transition: all 100ms linear;
 }
 
-button#novo-planeta:hover {
+button:hover {
 	background-color: white;
 	color: black;
 }
