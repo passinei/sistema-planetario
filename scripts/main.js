@@ -1,6 +1,7 @@
 const astrosEl = document.querySelector('#astros')
 const orbitasEl = document.querySelector('#orbitas')
-const novoPlanetaEl = document.querySelector('#novo-planeta')
+const botaoCriarPlanetaEl = document.querySelector('#criar-planeta')
+const botaoDestruirPlanetaEl = document.querySelector('#destruir-planeta')
 
 function corAleatoria() {
 	const cores = ['red', 'green', 'blue', 'orange', 'brown', 'purple']
@@ -51,6 +52,11 @@ function Astro(distancia, velocidadeAngular, tamanho, cor) {
 		_orbitaEl.style.transform = `translate(${left}px, ${top}px)`
 	}
 
+	this.destroi = () => {
+		astrosEl.removeChild(_el)
+		orbitasEl.removeChild(_orbitaEl)
+	}
+
 	this.desenha()
 	this.desenhaOrbita()
 }
@@ -71,11 +77,10 @@ function criaPlaneta() {
 	)
 }
 
-criaPlaneta()
-
-novoPlanetaEl.addEventListener('click', () => {
-	criaPlaneta()
-})
+function destroiPlaneta() {
+	const planeta = planetas.pop()
+	if (planeta) planeta.destroi()
+}
 
 setInterval(() => {
 	centro.x = window.innerWidth / 2
@@ -90,3 +95,8 @@ setInterval(() => {
 		planeta.desenhaOrbita()
 	})
 }, 10)
+
+botaoCriarPlanetaEl.addEventListener('click', criaPlaneta)
+botaoDestruirPlanetaEl.addEventListener('click', destroiPlaneta)
+
+criaPlaneta()
